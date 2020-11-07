@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Ejercicio 15 - Informaci�n sobre eventos</title>
+        <style type="text/css">
+            body {
+                font-family: arial, helvetica;
+            }
+            #info1 {
+                width: 160px;
+                border: thin solid silver;
+                padding: 0.5em;
+               
+            }
+            #info2 {
+                width: 160px;
+                border: thin solid silver;
+                padding: 20px;
+               
+            }
+            #info h1 {
+                margin: 0;
+            }
+        </style>
+        <script type="text/javascript">
+            function muestraInformacion(e, id) {
+                
+                document.getElementById('info1').style.backgroundColor = 'white';
+                document.getElementById('info2').style.backgroundColor = 'white';
+            	if(e.type =="mousemove"){
+                    var navegadorX=e.screenX;
+                    var navegadaorY=e.screenY;
+                    var x = event.clientX;
+                    var y = event.clientY;
+                    document.getElementById(id).style.backgroundColor = "#FFFFCC";
+                    document.getElementById(id).getElementsByTagName('p')[0].innerHTML = "navegador ["+navegadorX+","+navegadaorY+"]";
+                    document.getElementById(id).getElementsByTagName('p')[1].innerHTML = "pagina ["+x+","+y+"]";
+                }
+                if(e.type =="keydown"){
+                    var tecla = e.key;
+                    var codigo = e.keyCode;
+                    document.getElementById(id).style.backgroundColor = "#CCE6FF";
+                    document.getElementById(id).getElementsByTagName('p')[0].innerHTML = "caracter ["+tecla+"]";
+                    document.getElementById(id).getElementsByTagName('p')[1].innerHTML = "codigo ["+codigo+"]";
+                }
+                
+
+            }
+
+            
+        </script>
+    </head>
+    <body onkeydown="muestraInformacion(event, 'info2')"  onmousemove="muestraInformacion(event,'info1')" >
+        <div id="info1" class="info" >
+            <h1>Raton</h1>
+            <p></p>
+            <p></p>
+        </div>
+        <div id="info2" class="info" >
+            <h1>Teclado</h1>
+            <p></p>
+            <p></p>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br /> 
+    </body>
+</html>
